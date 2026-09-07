@@ -4,24 +4,27 @@ import "./styles/App.css";
 const projects = [
   {
     name: "E-Commerce Website",
-    description:"A full-stack e-commerce application where users can browse products, add them to a cart, and place orders.",
+    description:
+      "A full-stack e-commerce application where users can browse products and purchase items.",
   },
   {
     name: "Task Management App",
-    description:"A task management application that allows users to create, update, complete, and delete tasks.",
+    description:
+      "An application that allows users to create, manage, and complete their daily tasks.",
   },
   {
     name: "Weather Application",
-    description:"A weather application that displays current weather information for different cities.",
+    description:
+      "An application that displays weather information for different cities.",
   },
 ];
 
 function Project({ name, description }) {
   return (
-    <>
+    <div className="project">
       <h1 data-ns-test="project-name">{name}</h1>
       <h6 data-ns-test="project-description">{description}</h6>
-    </>
+    </div>
   );
 }
 
